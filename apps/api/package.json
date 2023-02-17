@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "mesh build && next dev --port 3000",
-    "build": "next build",
+    "build": "mesh build && next build",
     "lint": "next lint",
     "generate": "mesh generate",
     "start": "mesh start",
