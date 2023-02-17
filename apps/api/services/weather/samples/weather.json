@@ -1,0 +1,22 @@
+{
+  "coord": { "lon": -4.5413, "lat": 50.8243 },
+  "weather": [{ "id": 804, "main": "Clouds", "description": "overcast clouds", "icon": "04n" }],
+  "base": "stations",
+  "main": {
+    "temp": 10.5,
+    "feels_like": 10.06,
+    "temp_min": 9.66,
+    "temp_max": 11.11,
+    "pressure": 1021,
+    "humidity": 94
+  },
+  "visibility": 10000,
+  "wind": { "speed": 4.92, "deg": 328, "gust": 9.39 },
+  "clouds": { "all": 100 },
+  "dt": 1676613696,
+  "sys": { "type": 2, "id": 2002666, "country": "GB", "sunrise": 1676618863, "sunset": 1676655418 },
+  "timezone": 0,
+  "id": 2654380,
+  "name": "Bude",
+  "cod": 200
+}
