@@ -1,0 +1,26 @@
+sources:
+  - name: Weather
+    handler:
+      jsonSchema:
+        endpoint: https://api.openweathermap.org/data/2.5
+        queryParams:
+          appid: '${OPENWEATHERMAP_API_KEY}'
+        operations:
+          - type: Query
+            field: weather
+            path: /weather?q={args.query}&units={args.units}
+            method: GET
+            responseSample: ./services/weather/samples/weather.json
+            argTypeMap:
+              query:
+                type: string
+                nullable: false
+                default: Bude
+              units:
+                type: string
+                nullable: false
+                default: metric
+
+serve:
+  endpoint: /api/graphql
+

@@ -3,24 +3,30 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3000",
+    "dev": "mesh build && next dev --port 3000",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "mesh generate",
+    "start": "mesh start",
+    "prebuild": "mesh build"
   },
   "dependencies": {
+    "@graphql-mesh/cli": "^0.82.22",
+    "@graphql-mesh/json-schema": "^0.37.15",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.6.0",
     "next": "^13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint-config-custom": "workspace:*",
-    "eslint": "7.32.0",
-    "tsconfig": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
 }
